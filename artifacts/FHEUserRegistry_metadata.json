@@ -1,0 +1,170 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "userAddr",
+						"type": "address"
+					}
+				],
+				"name": "UserRegistered",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "inputAddr",
+						"type": "address"
+					}
+				],
+				"name": "getUserSocialMediaIndicator",
+				"outputs": [
+					{
+						"internalType": "euint256",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "protocolId",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "inputAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "externalEuint256",
+						"name": "externalInputValue",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes",
+						"name": "inputProof",
+						"type": "bytes"
+					}
+				],
+				"name": "registerUser",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"title": "An contract that is used in Zauth for handing users' social media info",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"getUserSocialMediaIndicator(address)": {
+					"notice": "Return a number containing data about connected services and social media to a given address"
+				},
+				"registerUser(address,bytes32,bytes)": {
+					"notice": "Add new address and related info or overwrite old ones"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"fhe.sol": "FHEUserRegistry"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@fhevm/solidity/config/ZamaConfig.sol": {
+			"keccak256": "0xb0811d648aff593063814dcc58ac7aafd4bc40f34f1dbe2a3965576a29ea89f3",
+			"license": "BSD-3-Clause-Clear",
+			"urls": [
+				"bzz-raw://e15e75a5ce22858e70a94ed279f442279da0e7cc84d05eac8ee16c2e3948f8a1",
+				"dweb:/ipfs/QmSmA67ZHEZ5NLQVr4AQwRkk3dvAPHfn4egi6xXANjDV2E"
+			]
+		},
+		"@fhevm/solidity/lib/FHE.sol": {
+			"keccak256": "0x7a7b1c85bbef1ad02125f11af2f1c009ab6549075ab8d51d31ae9352f0441f35",
+			"license": "BSD-3-Clause-Clear",
+			"urls": [
+				"bzz-raw://20f2254f059fddd02b1fd2e21b0207a9f99edd977392879bd4c32b53226e425a",
+				"dweb:/ipfs/QmPs5wc3bNUxcnekbtYHpiTHBb4Xo38qmGpicCKphzpmzD"
+			]
+		},
+		"@fhevm/solidity/lib/FheType.sol": {
+			"keccak256": "0x945f006108fab92cb082a6e5a80525953f17b8d8dcf88a283a83fc80c765497a",
+			"license": "BSD-3-Clause-Clear",
+			"urls": [
+				"bzz-raw://0089374b6433a2d342bad116628aaf7a62393a11672739865dee139811e6d35c",
+				"dweb:/ipfs/Qmexn5aAGEfSEdxrQPvP2Ahzi4QrMfLW46YSp9kvJCVyu4"
+			]
+		},
+		"@fhevm/solidity/lib/Impl.sol": {
+			"keccak256": "0xac25fa2fb870877e0079d8a08e064fcc2b87ff7ce956e11c9a920fc70d82859c",
+			"license": "BSD-3-Clause-Clear",
+			"urls": [
+				"bzz-raw://935903324ac12f79b12f2b4fbd0f8f713a4a1a6cb1f69ae64440b4a5f43ec131",
+				"dweb:/ipfs/QmQQ1EqRdaus7jn5AXTaFMp8QczheWBmXm4zU6YpQXcEQg"
+			]
+		},
+		"@zama-fhe/oracle-solidity/address/ZamaOracleAddress.sol": {
+			"keccak256": "0x1e1117254b0e777ecbb902f3b9bb7d0b10920b7896e5eaa62b5163046685b28b",
+			"license": "BSD-3-Clause-Clear",
+			"urls": [
+				"bzz-raw://69cf50bae1082980f0a270f1f06ceeb17728fdaa0b284ae2fdfd1fdeefa0abb4",
+				"dweb:/ipfs/QmbxB4LGjNjCnYRBbExWfvKCj397vbwGfuq4wxKyxd7f3N"
+			]
+		},
+		"encrypted-types/EncryptedTypes.sol": {
+			"keccak256": "0x5da9799cd5c30067ea946164722197151baee1f2579a76f01874d4fb25df02a3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://90da0aa9e2852e84d0b8a671d91ae2de15c4e74438cdf1ea0b7c7bb2497ff282",
+				"dweb:/ipfs/QmXPCMtr9zW5GNuy2oKiokFHQXg2EzZt3jA6tpGddQaaAy"
+			]
+		},
+		"fhe.sol": {
+			"keccak256": "0x3215d9c570aa5bd5ffbe2a2017091d8d24ef3d4ea651bfe2813db7c9fad6afae",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3e8447bd7e0651aa456e65cd3c76afaf089477b598ccd4d11013a0578e72b82c",
+				"dweb:/ipfs/QmbmYEEVsT1uTuBFAtCqZsiruu99LjMRbzxLMTeaCPPhFa"
+			]
+		}
+	},
+	"version": 1
+}
