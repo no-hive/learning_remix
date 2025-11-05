@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.30+commit.73712a01"
+		"version": "0.8.24+commit.e11b9ed9"
 	},
 	"language": "Solidity",
 	"output": {
@@ -97,7 +97,7 @@
 		"compilationTarget": {
 			"fhe.sol": "FHEUserRegistry"
 		},
-		"evmVersion": "prague",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -158,11 +158,11 @@
 			]
 		},
 		"fhe.sol": {
-			"keccak256": "0x3215d9c570aa5bd5ffbe2a2017091d8d24ef3d4ea651bfe2813db7c9fad6afae",
+			"keccak256": "0x54420016b77b9c40d61cb1630fed115ebdf2dbef06da3d467580e593f95c9980",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3e8447bd7e0651aa456e65cd3c76afaf089477b598ccd4d11013a0578e72b82c",
-				"dweb:/ipfs/QmbmYEEVsT1uTuBFAtCqZsiruu99LjMRbzxLMTeaCPPhFa"
+				"bzz-raw://021ef8ff6bba0068c8f0aba65336eda67a6006fdbd732d683d19fe3016f2f0c8",
+				"dweb:/ipfs/QmaYasBqEy2vhpWy2obhPVhz6oyaCaL1z1Ga8TAxmTBky5"
 			]
 		}
 	},

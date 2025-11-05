@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_Timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_Event",
+						"type": "string"
+					}
+				],
+				"name": "CreateEvent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Simple.sol": "Simple"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Simple.sol": {
+			"keccak256": "0x1c5c56c518c9cab16f2e1ed63859b58cba6f290d430bc587123d9572ea9492f3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://56632594facf8df5e38fa89dfb5affe15f56796620f12ae16f9905f68de7658b",
+				"dweb:/ipfs/QmUDdJuHudwEQFrbQLFr6SC81u1hrcGDZXDwKB9kKAyZvL"
+			]
+		}
+	},
+	"version": 1
+}
